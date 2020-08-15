@@ -1,0 +1,30 @@
+.services {
+  margin-top: 60px;
+
+  .service {
+    margin-bottom: 60px;
+    &__img {
+      height: 10rem;
+      width: 10rem;
+      background-color: $color-primary;
+      border-radius: 50%;
+      display: inline-block;
+      &--item {
+        width: 100%;
+        height: 100%;
+        padding: 2.5rem;
+      }
+    }
+
+    &__title {
+      color: $color-black;
+      font-size: 2rem;
+    }
+    &__paragraph {
+      font-size: 1.6rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+// TODO: I'll try improving this entire section later. Now, skipping to next section to create a layout first :)
