@@ -6,11 +6,15 @@
     padding: 7rem 0;
   }
   &__title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   &__paragraph {
     padding: 2rem;
     padding-left: 0;
+  }
+  &__paragraph--right {
+    padding-right: 0;
+    padding-left: 2rem;
   }
   &__img--item {
     width: 100%;
