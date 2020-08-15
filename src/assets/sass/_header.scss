@@ -9,30 +9,48 @@
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  &__title {
-    font-size: 6rem;
-    color: $color-white;
+  &__top {
+    display: flex;
+    align-items: baseline;
 
-    &--span {
-      display: block;
-      line-height: 4.1rem;
-      margin-bottom: 3rem;
+    .logo__img {
+      width: 100px;
+    }
+
+    .menu {
+      &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      &__item {
+        display: inline-block;
+        margin: 0 2rem;
+      }
+      &__link {
+        display: block;
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 1.8rem;
+        padding: 2rem 0;
+        transition: all 0.2s linear;
+
+        &:hover {
+          color: $color-bg;
+        }
+      }
     }
   }
 
-  &__content {
-    line-height: 1.6;
-    margin-bottom: 4rem;
-  }
-
-  &__img {
-    width: 100%;
-    overflow: hidden;
-    img {
+  .hero-area {
+    &__title {
+      font-size: 6rem;
+      margin-bottom: 4rem;
+    }
+    &__img {
+      margin-top: 4rem;
       width: 100%;
     }
   }

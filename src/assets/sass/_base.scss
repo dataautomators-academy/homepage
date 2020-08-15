@@ -1,25 +1,36 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.7rem;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 400;
-    background-color: $color-bg;
-    color: $color-grey;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  background-color: $color-white;
+  color: $color-grey;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-heading;
+  font-weight: 700;
+}
+
 // Change selection color
 ::selection {
-    background-color: $color-primary;
-    color: $color-white;
+  background-color: $color-primary;
+  color: $color-white;
 }
