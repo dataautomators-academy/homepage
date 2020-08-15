@@ -1,0 +1,22 @@
+{
+  "name": "cea-homepage",
+  "version": "1.0.0",
+  "description": "A Beautiful homepage design for CodeEatingAnts",
+  "license": "MIT",
+  "author": "Shaon Kabir <shaonkabir98@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "^0.0.6",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.26.10"
+  }
+}

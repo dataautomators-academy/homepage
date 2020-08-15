@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+  .header {
+    &__title {
+      font-size: 35px;
+      font-weight: 800;
+      margin-top: 50px;
+    }
+    &__img {
+      margin-top: 30px;
+    }
+  }
+  .marketing-box {
+    flex: 0 0 48%;
+    max-width: 50%;
+    margin: 0;
+    margin-top: 20px;
+    &__center {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  .section__title {
+    font-size: 30px;
+  }
+  .footer {
+    &--header {
+      &__text {
+        font-size: 30px;
+      }
+    }
+  }
+  .btn {
+    &,
+    &:link,
+    &:visited {
+      padding: 1.5rem 3rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .marketing-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+  .advantages {
+    margin-top: 100px;
+  }
+}

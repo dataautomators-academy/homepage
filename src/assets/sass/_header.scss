@@ -1,0 +1,39 @@
+.section__title {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  padding: 2rem 0;
+  color: $color-white;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  &__title {
+    font-size: 6rem;
+    color: $color-white;
+
+    &--span {
+      display: block;
+      line-height: 4.1rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__content {
+    line-height: 1.6;
+    margin-bottom: 4rem;
+  }
+
+  &__img {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
