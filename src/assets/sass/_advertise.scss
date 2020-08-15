@@ -1,0 +1,18 @@
+.section-bg {
+  background: #f4f6fe;
+}
+.advertise {
+  &__section {
+    padding-top: 10rem;
+  }
+  &__title {
+    font-size: 4rem;
+  }
+  &__paragraph {
+    padding: 2rem;
+    padding-left: 0;
+  }
+  &__img--item {
+    width: 100%;
+  }
+}
