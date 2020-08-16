@@ -16,7 +16,12 @@
     padding-right: 0;
     padding-left: 2rem;
   }
-  &__img--item {
-    width: 100%;
+  &__image {
+    &--item {
+      width: 100%;
+    }
+  }
+  &__image--one {
+    padding-top: 8rem;
   }
 }

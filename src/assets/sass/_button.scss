@@ -1,4 +1,5 @@
-.btn {
+.btn,
+.btn__white {
   &,
   &:link,
   &:visited {
@@ -27,5 +28,18 @@
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+.btn__white {
+  &,
+  &:link,
+  &:visited {
+    background: $color-white;
+    color: $color-primary;
+  }
+  &:hover {
+    color: #fff;
+    background: $color-primary;
   }
 }
