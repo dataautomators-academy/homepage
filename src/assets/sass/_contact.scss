@@ -1,0 +1,52 @@
+.contact {
+  padding: 5rem 0;
+
+  &__img {
+    padding-top: 7rem;
+
+    &--item {
+      width: 100%;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="cal"],
+textarea#contact__text {
+  background: #f4f6fe;
+  width: 100%;
+  padding: 2.5rem;
+  margin-bottom: 2.6rem;
+  border: 1px solid #f4f6fe;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  width: 100%;
+  display: inline-block;
+  padding: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 2rem 0;
+  border-radius: 5rem;
+}
+textarea#contact__text {
+  resize: none;
+  height: 187px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="cal"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px $color-primary;
+}
