@@ -1,0 +1,23 @@
+.footer {
+  background: $color-bg;
+  color: $color-grey;
+  padding-top: 6rem;
+
+  &__content {
+    min-width: 40%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+    font-size: 90%;
+  }
+  &__heading {
+    margin: 0 0 15px;
+    font-size: 2rem;
+    color: $color-white;
+  }
+
+  &__copyright {
+    font-size: 80%;
+    border-top: 1px solid #555;
+    padding: 15px 0;
+  }
+}
