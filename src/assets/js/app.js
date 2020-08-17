@@ -31,7 +31,21 @@ $(document).ready(function () {
     font-size: 20px;
 `;
   console.log(
-    "%c 🔥 Welcome Developers, If you find any bugs, feel free to knock us.🔥",
+    "%c 🔥 Welcome Developers, If you find any bugs, feel free to knock us anytime.🔥",
     styles
   );
+});
+
+// window_scroll_function
+$(window).scroll(function () {
+  // [Sticky Header]
+  let scroll = $(window).scrollTop();
+  const header = document.querySelector(".header");
+  if (scroll > 500) {
+    // Custom CSS written and that's will trigger while hovering after scroll
+    header.classList.add("fixed");
+    header.setAttribute("id", "header__sticky");
+  } else {
+    header.removeAttribute("id");
+  }
 });

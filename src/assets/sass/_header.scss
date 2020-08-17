@@ -8,6 +8,7 @@
 
 .header {
   height: 100vh;
+
   &__top {
     padding: 2rem 0;
     display: flex;
@@ -55,7 +56,6 @@
       margin-bottom: 4rem;
     }
     &__img {
-      margin-top: 4rem;
       width: 100%;
     }
   }
@@ -72,5 +72,31 @@
     &--img {
       width: 35rem;
     }
+  }
+}
+
+// Sticky Header
+#header__sticky {
+  & .header__bg {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: $color-bg;
+    transition: all 0.4s linear;
+  }
+  & .header__top {
+    padding: 0.3rem 0;
+  }
+
+  & .menu__link {
+    color: $color-white;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  & .menu__link.active {
+    color: $color-secondary;
   }
 }
