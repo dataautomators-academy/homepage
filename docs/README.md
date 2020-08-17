@@ -1,6 +1,6 @@
-# ওয়েব অটোমেশন অনলাইন ওয়ার্কশপ
+# Code Eating Ants - Homepage
 
-![GitHub contributors](https://img.shields.io/github/contributors/shaonkabir8/cea-homepage?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/code-eating-ants/homepage?style=for-the-badge)
 ![Built With Love](assets/built-with-love.png)
 
 ![](assets/preview.png)
