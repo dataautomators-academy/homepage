@@ -10,6 +10,17 @@ $(document).ready(function () {
   // prevent clicking [HOME] page :)
   $(".disable").on("click", (e) => e.preventDefault());
 
+  // scroll_to_top button event
+  $(".scroll__top").on("click", (e) => {
+    e.preventDefault();
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+
   // FUNNY:- Message for Developers who open Dev-Tools on out site :)
   const styles = `
     background: #04206f; 
