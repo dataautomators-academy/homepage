@@ -20,9 +20,37 @@
       margin: 0 0.7rem;
     }
   }
+  .menu {
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0 2rem;
+    }
+    &__link {
+      font-family: $font-english;
+      display: block;
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 1.8rem;
+      padding: 2rem 0;
+      transition: color 0.2s linear;
+      &:hover {
+        color: $color-bg;
+      }
+    }
+    .active {
+      color: $color-bg;
+    }
+  }
 
   .hero-area {
     &__title {
+      font-family: $font-english;
       font-size: 6rem;
       margin-bottom: 4rem;
     }
