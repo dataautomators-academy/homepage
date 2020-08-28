@@ -7,8 +7,6 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
-  // prevent clicking [HOME] page :)
-  $(".disable").on("click", (e) => e.preventDefault());
 
   // scroll_to_top button event
   $(".scroll__top").on("click", (e) => {

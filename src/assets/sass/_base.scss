@@ -34,3 +34,13 @@ h6 {
   background-color: $color-primary;
   color: $color-white;
 }
+
+// Change Scrollbar Style
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $color-primary;
+}
