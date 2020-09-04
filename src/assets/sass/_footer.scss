@@ -4,6 +4,11 @@
   color: $color-grey;
   padding-top: 6rem;
 
+  &__center__col {
+    display: flex;
+    justify-content: center;
+  }
+
   &__content {
     min-width: 40%;
     margin-right: 8%;
@@ -16,6 +21,45 @@
     color: $color-white;
   }
 
+  &__list {
+    margin: 0;
+  }
+  &__item {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    padding-left: 2rem;
+    margin: 2px 0;
+    padding-left: 2rem;
+    cursor: all-scroll;
+    transition: color 0.2s linear;
+
+    &::before {
+      position: absolute;
+      content: "➣";
+      color: currentColor;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 2rem;
+    &--link {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 0 1rem;
+      margin-left: 0;
+    }
+  }
+
+  // Copyright Area
   &__copyright {
     font-size: 80%;
     border-top: 1px solid #555;
