@@ -39,10 +39,13 @@ $(window).scroll(function () {
   // [Sticky Header]
   let scroll = $(window).scrollTop();
   const header = document.querySelector(".header");
+  const mainElement = document.querySelector('.main');
+  
   if (scroll > 500) {
     // Custom CSS written and that's will trigger while hovering after scroll
-    header.classList.add("fixed");
     header.setAttribute("id", "header__sticky");
+    mainElement.setAttribute("id", "main__sticky");
+
   } else {
     header.removeAttribute("id");
   }

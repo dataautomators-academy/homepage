@@ -7,7 +7,6 @@
 }
 
 .header {
-  height: 100vh;
 
   &__top {
     padding: 2rem 0;
@@ -49,18 +48,7 @@
     }
   }
 
-  .hero-area {
-    &__title {
-      font-family: $font-english;
-      font-size: 6rem;
-      margin-bottom: 4rem;
-    }
-    &__img {
-      width: 100%;
-    }
-  }
-
-  // Overlay
+  // svg layers -> top left corner
   &__overlay {
     position: absolute;
     left: 0;
@@ -75,8 +63,28 @@
   }
 }
 
+// HERO SECTION
+// TODO: 🚀 Few modification needed. 
+.hero {
+  padding: 3rem 0;
+  &__title {
+    font-family: $font-english;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+  &__img {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 // Sticky Header
 #header__sticky {
+  padding-bottom: 100px;
   & .header__bg {
     position: fixed;
     width: 100%;
@@ -99,4 +107,21 @@
   & .menu__link.active {
     color: $color-secondary;
   }
+
+  & .header__overlay {
+    display: none;
+  }
+
+  & section {
+    padding-top: 50px;
+  }
 }
+
+
+// TODO: 🚀 It'll be modified after converting into Gatsby 
+// if header is fixed,
+main#main__sticky > section:not(:first-child),
+main#main__sticky .advertise  {
+    padding-top: 9rem;
+}
+
